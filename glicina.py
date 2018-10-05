@@ -17,13 +17,6 @@ pH = array([1.75, 2.32, 2.37, 2.44, 2.52, 2.62,
 
 concentracao = array([0.125/1000 * n for n in range(0, 51)])
 
-# poly = lagrange(concentracao, pH)
-# coefficients = poly.coef
-# n = poly.order
-# CS = CubicSpline(concentracao, pH)
-# CSp = CS.derivative(1)
-# CSpp = CS.derivative(2)
-
 poly0 = lagrange(concentracao[3:10], pH[3:10])
 poly1 = lagrange(concentracao[12:19], pH[12:19])
 poly2 = lagrange(concentracao[21:30], pH[21:30])
@@ -46,9 +39,5 @@ plt.plot(linspace(concentracao[2], concentracao[11], 30), poly0(linspace(concent
 plt.plot(linspace(concentracao[11], concentracao[19] - 0.125/2000, 30), poly1(linspace(concentracao[11], concentracao[19] - 0.125/2000, 30)), "--")
 plt.plot(linspace(concentracao[20], concentracao[30], 30), poly2(linspace(concentracao[20], concentracao[30], 30)), "--")
 plt.plot(linspace(concentracao[36], concentracao[47], 30), poly3(linspace(concentracao[36], concentracao[47], 30)), "--")
-# plt.plot(linspace(concentracao[2], concentracao[11], 30), poly1(linspace(concentracao[2], concentracao[11], 30)), "--")
-# plt.plot(concentracao, CS(concentracao))
-# plt.plot(concentracao, CSp(concentracao))
-# plt.plot(concentracao, CSpp(concentracao))
 
 plt.show()
