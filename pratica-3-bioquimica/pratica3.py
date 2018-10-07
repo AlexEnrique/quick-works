@@ -24,6 +24,9 @@ func = lambda x: a * x
 plt.xlabel("Solução padrão de albumina % (m/v)")
 plt.ylabel("Absorbância")
 plt.text(.9, .25, ("absortividade = %.2f +/- %.2f" % (a, __a)))
-plt.plot(concentr, A, "ok")
+plt.plot(concentr[:n-2], A[:n-2], "ok")
+plt.plot(concentr[n-2:], A[n-2:], "or")
 plt.plot(concentr[:n-2], func(concentr[:n-2]), "--b")
+
+plt.savefig("pratica3.png")
 plt.show()
