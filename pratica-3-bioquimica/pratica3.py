@@ -4,7 +4,7 @@ from numpy import array
 # the curve is of the form y = a * x
 # 'a' is the coeficiente and '__a' the error of 'a'
 def regression(x, y):
-    __y = .01 # Error of y[i]
+    __y = .01 # Error of y[i], for each i
 
     a = sum(x * y) / sum(x**2)
     __a = (sum( (__y * x)**2 ))**(1/2) / sum(x**2)
