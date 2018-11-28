@@ -1,0 +1,28 @@
+*Introdução
+
+O relatório a seguir utiliza um capacitor: aparato experimental que consiste em duas placas submetidas à uma diferença de potencial e produz um campo elétrico uniforme na região interna das placas. O campo elétrico produzido é atenuado pela existência de um dielétrico entre as placas (que a princípio é o ar), essa atenuação pode ser medida através da carga induzida em uma das placas. Com isso é possível calcular a constante de permissividade elétrica do material, esse coeficiente ressalta a facilidade associada a atuação de um campo elétrico em um material, sendo a maior permissividade elétrica possível a do vácuo. Então o experimento a 
+seguir consiste em utilizar esse aparato para determinar a constante de permissividade de 3 diferentes materiais: ar, plástico e madeira.
+
+*Fundamentação teórica
+A relação entre o campo elétrico e a diferença de potencial é dada por
+
+A partir da diferença de potencial entre as placas surgirá no interior um campo elétrico que polariza as
+moléculas no interior de tal forma que essas pequenas polarizações produzem campos elétricos contrários ao que atua externamente, por isso a presença de um material isolante atenua a intensidade do campo elétrico no interior do capacitor.
+O capacitor tem no seu interior um isolante que impede a corrente elétrica entre as placas, o material no interior se polariza mas não ocorre uma movimentação de cargas elétricas porque no condutor os elétrons estão fortemente ligados aos seus núcleos. Caso o material já esteja polarizado por exemplo a água, o que ocorre é um alinhamento entre as cargas das placas e do isolante.
+
+Um capacitor que tem no seu interior um isolante tem seu valor de capacitância alterado em 
+
+Para o caso do vácuo as cargas (Q) armazenadas nas placas de um capacitor (C) submetido a uma diferença de potencial (UC).
+Abaixo a carga acumulada em função das características geométricas do sistema como área (A), distância entre as placas (d) e o termo ε0 representa uma idealização que o sistema esteja funcionando no vácuo.
+
+Agora se no meio do capacitor é colocado um material o acúmulo de carga em função da nova capacitância será introduzido o termo ε do meio em questão
+
+
+Como a capacitância é calculada através C=Q/U ao adicionar um dielétrico no interior do capacitor pelo fenômeno
+de polarização no interior ocorre uma diminuição da diferença de potencial (DDP) (caso a fonte seja desligada)
+e isso aumenta a capacitância do sistema sem alterar a área e a distância entre as placas. Na outra situação 
+onde o dielétrico está no interior mas a fonte permanece conectada não ocorrerá uma diminuição da DDP mas a
+capacitancia aumenta porque a fonte fornece cargas elétricas para manter a DDP.
+Isso mostra uma relação inversa entre a carga e a distância entre as placas, e uma relação linear da carga com a tensão aplicada.
+Esses dois parâmetros podem ser variados e o coeficiente angular da reta formada  fornece indiretamente o epsilon do material
+em questão.
