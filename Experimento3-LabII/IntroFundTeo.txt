@@ -14,9 +14,8 @@
 *Fundamentação teórica
 A relação entre o campo elétrico e a diferença de potencial é dada por
 
-A partir da diferença de potencial entre as placas surgirá no interior um campo elétrico que polariza as
-moléculas no interior de tal forma que essas pequenas polarizações produzem campos elétricos contrários ao que atua externamente, por isso a presença de um material isolante atenua a intensidade do campo elétrico no interior do capacitor.
-O capacitor tem no seu interior um isolante que impede a corrente elétrica entre as placas, o material no interior se polariza mas não ocorre uma movimentação de cargas elétricas porque no condutor os elétrons estão fortemente ligados aos seus núcleos. Caso o material já esteja polarizado por exemplo a água, o que ocorre é um alinhamento entre as cargas das placas e do isolante.
+onde U_c é a diferença de potencial e E é o campo elétrico (colocar isso em vetores quando passar para o drive). Aplicada uma diferença de potencial entre as placas, surgirá no interior um campo elétrico que polariza as moléculas do meio no interior das placas de tal forma que estas pequenas polarizações produzem campos elétricos contrários ao que atua externamente; por isso a presença de um material dielétrico atenua a intensidade do campo no interior do capacitor.
+O dielétrico no interior é um isolante, impedindo a passagem de corrente elétrica entre as placas, porque, em um condutor, os elétrons estão fortemente ligados aos seus núcleos. 
 
 Um capacitor que tem no seu interior um isolante tem seu valor de capacitância alterado em 
 
