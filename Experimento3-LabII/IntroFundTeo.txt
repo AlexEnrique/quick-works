@@ -1,9 +1,12 @@
+*Resumo
+
+  O presente experimento consiste em utilizar um capacitor para determinar a permissividade de três diferentes materiais: ar, plástico e madeira. A permissividade do ar nos permite aproximar a permissividade do vácuo.
+  Nos procedimentos a seguir, utiliza um capacitor de placas paralelas, aparato que consiste em duas placas condutoras submetidas à uma diferença de potencial, produzindo um campo elétrico uniforme na região interna das placas. 
+  Na presença de um meio dielétrico, o campo elétrico produzido é atenuado. Essa atenuação pode ser medida através da carga induzida nas placas, permitindo assim calcular a constante de permissividade elétrica do material.
+
 *Introdução
 
-  O presente experimento consiste em utilizar um capacitor para determinar a permissividade de três diferentes materiais: ar, plástico e madeira. A permissividade do ar nos permite aproxima a permissividade do vácuo.
-  O relatório a seguir utiliza um capacitor de placas paralelas; que consiste em duas placas submetidas à uma diferença de potencial produzindo um campo elétrico uniforme na região interna das placas. Na presença de um meio dielétrico, o campo elétrico produzido é atenuado. Essa atenuação pode ser medida através da carga induzida nas placas, permitindo assim calcular a constante de permissividade elétrica do material.
-
-**********
+**********Deslocado, por enquanto******
 , esse coeficiente ressalta a facilidade associada a atuação de um campo elétrico em um material, sendo a menor permissividade elétrica possível a do vácuo. 
 **********
 
