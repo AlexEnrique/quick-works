@@ -12,12 +12,18 @@
 
 
 *Fundamentação teórica
-A relação entre o campo elétrico e a diferença de potencial é dada por
+A relação entre o campo elétrico e a diferença de potencial entre dois pontos r1 e r2 é dada por
 
-onde U_c é a diferença de potencial e E é o campo elétrico (colocar isso em vetores quando passar para o drive). Aplicada uma diferença de potencial entre as placas, surgirá no interior um campo elétrico que polariza as moléculas do meio no interior das placas de tal forma que estas pequenas polarizações produzem campos elétricos contrários ao que atua externamente; por isso a presença de um material dielétrico atenua a intensidade do campo no interior do capacitor.
-O dielétrico no interior é um isolante, impedindo a passagem de corrente elétrica entre as placas, porque, em um condutor, os elétrons estão fortemente ligados aos seus núcleos. 
+onde Uc é a diferença de potencial e E é o campo elétrico. Aplicada uma diferença de potencial entre as placas, surgirá no interior um campo elétrico polarizando as moléculas do meio no interior das placas de tal forma que estas pequenas polarizações produzem campos elétricos contrários ao que atua externamente; por isso, a presença de um material dielétrico atenua a intensidade do campo no interior do capacitor.
+O dielétrico no interior é um isolante, impedindo a passagem de corrente elétrica entre as placas, porque, em um isolante, os elétrons estão fortemente ligados aos seus núcleos. 
 
+A capacitância (C) é uma medida da dificuldade em se acumular cargas em um capacitor. Essa é definida como o coeficiente de proporcionalidade entre a carga Q armazenada e a diferença de potencial aplicada entre as placas;
+Q = CU.
 Um capacitor que tem no seu interior um isolante tem seu valor de capacitância alterado em 
+
+****************************************************
+Li até aqui
+****************************************************
 
 Para o caso do vácuo as cargas (Q) armazenadas nas placas de um capacitor (C) submetido a uma diferença de potencial (UC).
 Abaixo a carga acumulada em função das características geométricas do sistema como área (A), distância entre as placas (d) e o termo ε0 representa uma idealização que o sistema esteja funcionando no vácuo.
