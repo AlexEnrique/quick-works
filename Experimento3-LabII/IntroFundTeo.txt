@@ -1,0 +1,41 @@
+*Resumo
+
+  O presente experimento consiste em utilizar um capacitor para determinar a permissividade de três diferentes materiais: ar, plástico e madeira. A permissividade do ar nos permite aproximar a permissividade do vácuo.
+  Nos procedimentos a seguir, utiliza um capacitor de placas paralelas, aparato que consiste em duas placas condutoras submetidas à uma diferença de potencial, produzindo um campo elétrico uniforme na região interna das placas. 
+  Na presença de um meio dielétrico, o campo elétrico produzido é atenuado. Essa atenuação pode ser medida através da carga induzida nas placas, permitindo assim calcular a constante de permissividade elétrica do material.
+
+*Introdução
+
+**********Deslocado, por enquanto******
+, esse coeficiente ressalta a facilidade associada a atuação de um campo elétrico em um material, sendo a menor permissividade elétrica possível a do vácuo. 
+**********
+
+
+*Fundamentação teórica
+A relação entre o campo elétrico e a diferença de potencial entre dois pontos r1 e r2 é dada por
+
+onde Uc é a diferença de potencial e E é o campo elétrico. Aplicada uma diferença de potencial entre as placas, surgirá no interior um campo elétrico polarizando as moléculas do meio no interior das placas de tal forma que estas pequenas polarizações produzem campos elétricos contrários ao que atua externamente; por isso, a presença de um material dielétrico atenua a intensidade do campo no interior do capacitor.
+O dielétrico no interior é um isolante, impedindo a passagem de corrente elétrica entre as placas, porque, em um isolante, os elétrons estão fortemente ligados aos seus núcleos. 
+
+A capacitância (C) é uma medida da dificuldade em se acumular cargas em um capacitor. Essa é definida como o coeficiente de proporcionalidade entre a carga Q armazenada e a diferença de potencial aplicada entre as placas;
+Q = CU.
+Um capacitor que tem no seu interior um isolante tem seu valor de capacitância alterado em 
+
+****************************************************
+Li até aqui
+****************************************************
+
+Para o caso do vácuo as cargas (Q) armazenadas nas placas de um capacitor (C) submetido a uma diferença de potencial (UC).
+Abaixo a carga acumulada em função das características geométricas do sistema como área (A), distância entre as placas (d) e o termo ε0 representa uma idealização que o sistema esteja funcionando no vácuo.
+
+Agora se no meio do capacitor é colocado um material o acúmulo de carga em função da nova capacitância será introduzido o termo ε do meio em questão
+
+
+Como a capacitância é calculada através C=Q/U ao adicionar um dielétrico no interior do capacitor pelo fenômeno
+de polarização no interior ocorre uma diminuição da diferença de potencial (DDP) (caso a fonte seja desligada)
+e isso aumenta a capacitância do sistema sem alterar a área e a distância entre as placas. Na outra situação 
+onde o dielétrico está no interior mas a fonte permanece conectada não ocorrerá uma diminuição da DDP mas a
+capacitancia aumenta porque a fonte fornece cargas elétricas para manter a DDP.
+Isso mostra uma relação inversa entre a carga e a distância entre as placas, e uma relação linear da carga com a tensão aplicada.
+Esses dois parâmetros podem ser variados e o coeficiente angular da reta formada  fornece indiretamente o epsilon do material
+em questão.
