@@ -4,15 +4,15 @@ from numpy import poly1d
 # the following function opens the requested file
 # the parameter 'option' is an integer in [1:3] (closed)
 def openFile(option):
-    if option == 1: return open("Solido", "r")
-    elif option == 2: return open("Laminado", "r")
-    else: return open("Misturado", "r")
+    if option == 1: return open("SortedSolido", "r")
+    elif option == 2: return open("SortedLaminado", "r")
+    else: return open("SortedMisturado", "r")
 
 # that function separates the points for the interpolation
 # it receives the lines and the index after the horizintal axis here crossed
 def selectPoints(lines, k):
     H, B = [], []
-    r = 3 # the inverval will be [k - r: k + r)
+    r = 4 # the inverval will be [k - r: k + r)
 
     for j in range(k - r, k + r): #[k-4, k+4)
         line = lines[j]
@@ -61,7 +61,7 @@ def main():
         B_before = B_current # save the preceding to compare
         B_current = float( lineSplited[1][ : len(lineSplited[1]) - 1] )
 
-        if (B_before > 0 and B_current < 0): # crossed the coercive field...
+        if (B_before < 0 and B_current > 0): # crossed the coercive field...
             """
             The current index is 'k'. To interpolate we will take 4 points
             after and 4 points before the zero; so, from k - 4 (closed) to
