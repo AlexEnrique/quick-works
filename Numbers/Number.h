@@ -7,15 +7,17 @@ typedef unsigned int uint;
 
 class Number {
 private:
-  std::deque<uint8_t> _digits;
+  std::deque<uint> _digits;
+  void _IncrementOperatorException() const;
+  void _DecrementOperatorException() const;
 
 public:
   // Constructors and destructor
-  // WARNING: Remember that the first digit must be non zero
+  // WARNING: Remember that the first digit must be non zero -- Handle this...
 
-  // !!! NOT USING A POINTER ANYMORE !!!
-  // Number(); // ??TODO: Remove later??
   Number(uint number);
+  // !!! WARNING: NOT USING A POINTER ANYMORE !!!
+  // Number(); // ??TODO: Remove later??
   // Number(const Number&); // ??TODO: Remove later?? Copy constructor
   // Number(Number&&); // ??TODO: Remove later?? Copy constructor
   // Number(uint numberOfDigits); // ??TODO: Remove later??
@@ -49,7 +51,7 @@ public:
   uint8_t operator[](int);
 
   // methods
-  uint GetNumberOfDigits() const;
+  inline size_t GetNumberOfDigits() const;
 };
 
 #endif
