@@ -46,8 +46,8 @@ public:
   bool operator>=(const Number&) const;
   bool operator<=(const Number&) const;
 
-  uint8_t operator[](int) const;
-  uint8_t operator[](int);
+  uint operator[](int) const;
+  uint operator[](int);
 
   // methods
   inline size_t GetNumberOfDigits() const;
