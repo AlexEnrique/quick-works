@@ -15,7 +15,7 @@ Number::Number(uint number) {
 
   while (number != 0) {
     /*
-      - Why the  / (decimalPlace / 10)?
+      - Why the " / (decimalPlace / 10)"?
       Note:
         > 124515 % 10 == 5
         > 124510 % 100 == 10
@@ -60,12 +60,12 @@ void Number::operator=(uint number) {
   *this = aux;
 }
 
-Number& Number::operator++() { // TODO: Rewrite more simple
+Number& Number::operator++() { // TODO: Rewrite it more simple
   size_t length = this->_digits.size();
   uint i = static_cast<uint>(length - 1); // position index
 
   if (length > 0) {
-    while (i > -1) { // WARNING: assuming i > 1, at first
+    while (i > -1) {
       this->_digits[i] += 1;
       if (this->_digits[i] == 10) {
         this->_digits[i] = 0;
@@ -82,7 +82,7 @@ Number& Number::operator++() { // TODO: Rewrite more simple
     this->_IncrementOperatorException();
 }
 
-Number Number::operator++(int) { // TODO: Rewrite more simple
+Number Number::operator++(int) { // TODO: Rewrite it more simple
   Number copy = *this;
   ++(*this);
 
@@ -94,7 +94,7 @@ Number& Number::operator--() {
   uint i = static_cast<uint>(length - 1); // position index
 
   if (length > 0) {
-    while (i > -1) { // WARNING: assuming i > 1, at first
+    while (i > -1) {
       this->_digits[i] -= 1;
       if (this->_digits[i] == -1) {
         this->_digits[i] = 0;
