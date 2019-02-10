@@ -1,7 +1,6 @@
 #ifndef NUMBER_CPP_
 #define NUMBER_CPP_
 #include <deque>
-#include <cstdint>
 #include <sstream>
 #include <string>
 

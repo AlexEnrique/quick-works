@@ -1,7 +1,6 @@
 #ifndef NUMBER_H_
 #define NUMBER_H_
 #include <deque>
-#include <cstdint>
 
 typedef unsigned int uint;
 
