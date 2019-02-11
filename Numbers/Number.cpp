@@ -237,7 +237,7 @@ Number Number::operator+(std::uint64_t n) {
   return (*this) + aux;
 }
 
-Number Number::operator*(const Number& other) { // TODO: Implement it
+// Number Number::operator*(const Number& other) { // TODO: Implement it
   // // get the greatest length:
   // size_t length = std::max(this->GetNumberOfDigits(), other.GetNumberOfDigits());
   // bool differentSize = this->GetNumberOfDigits() != other.GetNumberOfDigits();
