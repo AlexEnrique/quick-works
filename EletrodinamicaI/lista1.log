@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.20)  17 FEB 2019 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.20)  17 FEB 2019 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1759,29 +1759,21 @@ Overfull \hbox (4.02086pt too wide) detected at line 118
 <./imgs/gaussian_limit.png, id=57, 481.8pt x 361.35pt>
 File: ./imgs/gaussian_limit.png Graphic file (type png)
 <use ./imgs/gaussian_limit.png>
-Package pdftex.def Info: ./imgs/gaussian_limit.png  used on input line 174.
+Package pdftex.def Info: ./imgs/gaussian_limit.png  used on input line 153.
 (pdftex.def)             Requested size: 192.71658pt x 144.53743pt.
 
 [5 <./imgs/gaussian_limit.png (PNG copy)>]
-Overfull \hbox (32.77983pt too wide) detected at line 200
+Overfull \hbox (32.77983pt too wide) detected at line 179
 []
  []
 
-
-Overfull \hbox (33.49966pt too wide) detected at line 204
-\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ^^Y\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 [] [
-][][] \OT1/cmr/m/n/10 = [] [][][] [] \OML/cmm/m/it/10 Q[]^^N\OT1/cmr/m/n/10 (\O
-ML/cmm/m/it/10 q[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 q[]\OT1/cmr/m/n/10 )\O
-ML/cmm/m/it/10 ;
- []
-
 [6] [7] [8] [9] [10]
-Overfull \hbox (2.50336pt too wide) detected at line 389
+Overfull \hbox (2.50336pt too wide) detected at line 367
 []
  []
 
 [11]
-Overfull \hbox (2.53683pt too wide) detected at line 408
+Overfull \hbox (2.53683pt too wide) detected at line 386
 \OMS/cmsy/m/n/10 ^^@[][] [] \OML/cmm/m/it/10 []e[]r[] [] ^^R [] [] [] \OT1/cmr
 /m/n/10 = \OMS/cmsy/m/n/10 ^^@[] [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OT1/c
 mr/m/n/10 )[]\OML/cmm/m/it/10 e[] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OML
@@ -1813,7 +1805,7 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on lista1.pdf (12 pages, 326011 bytes).
+Output written on lista1.pdf (12 pages, 325861 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream

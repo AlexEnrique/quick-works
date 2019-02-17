@@ -129,7 +129,7 @@ Dos resultados anteriores, $\vb{E} = E \vu{n}$, assim,
 \newpage
 \problem{2} \statment{The Dirac delta function in three dimensions can be taken as the improper limit as $\alpha \to 0$ of the Gaussian function
 \[
-  D(\alpha, x, y, z) = (2\pi)^{-3/2} \alpha^{-3} \exp[-\frac{1}{2\alpha^2}(x^2 + y^2 + z^2)].
+  D(\alpha; x, y, z) = (2\pi)^{-3/2} \alpha^{-3} \exp[-\frac{1}{2\alpha^2}(x^2 + y^2 + z^2)].
 \]
 Consider a general orthogonal coordinate system specified by the surfaces $u = constant$, $v = constant$, $w = constant$, with length elements $\dd{u}/U$, $\dd{v}/V$, $\dd{w}/W$ in the three perpendicular directions. Show that
 \[
@@ -146,27 +146,6 @@ e, logo, o elemento de comprimento $\dd{s}$ passa a ser, para um sistema de coor
 \[
   (\dd{s})^2 = (\dd{u})^2/U^2 + (\dd{v})^2/V^2 + (\dd{w})^2/W^2
 \]
-%
-% Seja $\Omega$ uma função qualquer, sua diferecial $\dd{\Omega}$ pode ser escrita como
-% \begin{align*}
-%   \dd{\Omega}
-%     &= \pdv{\Omega}{q^i} \dd{q_i} = (\dd{\vb{r}} \vdot \grad) \Omega,
-% \end{align*}
-% de onde-se vemos que
-% \begin{equation*}
-%   \grad_i = \frac{1}{h_i} \partial_i.
-% \end{equation*}
-%
-% A expansão em Taylor de $\Omega$, supondo que a mesma exista, pode ser escrita como
-% \[
-%   \Omega(\vb{r}) = \Omega(\vb{a}) + \eval{ (\vb{a} \vdot \grad) \Omega(\vb{r}) }_{\vb{a}} + \frac{1}{2!} \eval{ (\vb{a} \vdot \grad)^2 \Omega(\vb{r}) }_{\vb{a}} + ... + \frac{1}{n!} \eval{ (\vb{a} \vdot \grad)^n \Omega(\vb{r}) }_{\vb{a}} + ...
-% \]
-%
-% Em primeira ordem, em um sistema de coordenadas curvilíneas $(q_i)$, com elementos de comprimento $h_i$, temos
-% \[
-%   \Omega(\vb{r}) = \Omega(\vb{a}) + \eval{ \qty(\frac{a_i}{h_i} \partial_i) \Omega(\vb{r}) }_{\vb{a}}.
-% \]
-
 
 Da Figura \ref{fig:gaussian-limit}, pode-se ver que, no limite $\alpha \to 0$, apenas a vizinhança do ponto \aspas{0} importa (como também mencionado no enunciado).
 \begin{figure}[h]
@@ -181,12 +160,12 @@ Com isso, no limite $\alpha \to 0$, $\Delta \vb{x}^2 = (\vb{x} - \vb{x}^\prime)^
   \Delta \vb{x}^2
   &\sim (\dd{u})^2/U^2 + (\dd{v})^2/V^2 + (\dd{w})^2/W^2,
   \\
-  &\sim \frac{u - u^\prime}{U^2} + \frac{v - v^\prime}{V^2} + \frac{w - w^\prime}{W^2}.
+  &\sim \frac{(u - u^\prime)^2}{U^2} + \frac{(v - v^\prime)^2}{V^2} + \frac{(w - w^\prime)^2}{W^2}.
 \end{align*}
 
 A função $D(\alpha; \vb{x})$ pode ser escrita como
 \begin{equation*}
-  D(\alpha; \vb{x}) = (2\pi)^{-3/2} \alpha^{-3} \exp[-\frac{1}{2\alpha^2}\qty(\frac{u - u^\prime}{U^2} + \frac{v - v^\prime}{V^2} + \frac{w - w^\prime}{W^2})].
+  D(\alpha; \vb{x}) = (2\pi)^{-3/2} \alpha^{-3} \exp[-\frac{1}{2\alpha^2}\qty(\frac{(u - u^\prime)^2}{U^2} + \frac{(v - v^\prime)^2}{V^2} + \frac{(w - w^\prime)^2}{W^2})].
 \end{equation*}
 
 Como,
@@ -200,9 +179,8 @@ Como,
 \end{align*}
 cada um dos termos $(2\pi)^{-1/2}\alpha^{-1} \exp[-\frac{1}{2 \alpha^2} (x_i - x_i^\prime)^2]$ tende para uma delta. Em especial,
 \begin{equation*}
-  (2\pi)^{-1/2}\alpha^{-1} \exp[-\frac{1}{2 Q_i^2\alpha^2} (q_i - q_i^\prime)^2] = \frac{Q_i}{\sqrt{2\pi} \alpha^\prime} \exp[-\frac{1}{{\alpha^\prime}^2}(q_i - q_i^\prime)^2] \xrightarrow[\alpha^\prime \to 0]{} Q_i \delta(q_i - q_i^\prime),
+  (2\pi)^{-1/2}\alpha^{-1} \exp[-\frac{1}{2 \alpha^2} \qty(\frac{q_i - q_i^\prime}{Q_i^2})^2] \xrightarrow[\alpha^\prime \to 0]{} \delta\qty(\frac{q_i - q_i^\prime}{Q_i}) = Q_i \delta(q_i - q_i^\prime),
 \end{equation*}
-onde $\alpha^\prime = Q_i \alpha$ e $Q_i$ é o (inverso do) elemento de comprimento associado a $q_i$.
 
 Portanto, combinando os resultados,
 \begin{equation*}
