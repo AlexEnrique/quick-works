@@ -7,8 +7,18 @@ LOGIC:
 ------------------------------------'''
 
 if __name__ == "__main__":
-    numfiles = 16
-    samples  = [str(n)+'.wav' for n in range(1, numfiles + 1)]
+    file_samples_names = input()
+    file = open(file_samples_names, 'r')
+
+    '''
+    - file_samples_names must be a file containing the name of files to
+    filter separed in each line (to use readlines()).
+    - For convention, the first line of the file must be the output_directory
+    path.
+    '''
+    samples = file.readlines()
+    output_directory = samples[0]
+    samples.pop(0)
 
     for s in samples:
         # reading a file
@@ -21,7 +31,5 @@ if __name__ == "__main__":
         # trimming silences
         y_reduced_power, time_trimmed = trim_silence(y_reduced_power)
 
-        output_directory = '03_flight_reduced/'
         output_file(output_directory ,filename, y_reduced_power, sr, '_filtered')
-
         print("Done for file " + s)
