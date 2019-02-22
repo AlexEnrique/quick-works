@@ -6,19 +6,15 @@
 
 #### Installation
 To install:
-1. ``$ brew install sox``
-1. ``$ brew install vorbis-tools``
-1. Create a virtualenv
-1. Install dependencies in one of two options:
-  - manually *(recommended)*:  
-      ``$ pip3 install librosa``  
-      ``$ pip3 install pysndfx``
-
-  - or automatically using pip:  
+1. Install the following packages: ``python3, python-dev, python3-dev, build-essential,
+   libssl-dev, libffi-dev, libxml2-dev, libxslt1-dev, zlib1g-dev, python3-pip,
+   sox, vorbis-tools, libsndfile1``.
+1. Create a virtualenv (optional).
+1. Install dependencies:
       ``$ pip3 install -r requirements.txt``
 
 To run:  
-``$ python3 noise.py``
+``$ python3 main.py``
 
 
 #### Interesting resources:

@@ -1,0 +1,11 @@
+{
+  "projectPath": "/home/alex/github/quick-works",
+  "title": "LaTeX-Plus Project",
+  "root": "test_wiener/pre_filtering/noise_reduced_data/main.py",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}

@@ -1,3 +1,6 @@
+import sys
+from noise import *
+
 '''------------------------------------
 LOGIC:
 [1] load file
@@ -7,29 +10,36 @@ LOGIC:
 ------------------------------------'''
 
 if __name__ == "__main__":
-    file_samples_names = input()
-    file = open(file_samples_names, 'r')
+    instructions = '''
+    - This script requires a text file passed via command line. That file must
+    contains the paths to files which the filter will be applied, and the output
+    path, where the filtered files will be saved.
+    - For convention, the first line of the file must be the output directory
+    path (ending with a '/').
+    - To pass a text file, say file.txt, call the script as:
+        'python3 main.py : file.txt'
+    '''
+    try:
+        file = open(sys.argv[2], 'r') # sys.argv == [main.py, :, file.txt]
+    except:
+        print(instructions)
 
-    '''
-    - file_samples_names must be a file containing the name of files to
-    filter separed in each line (to use readlines()).
-    - For convention, the first line of the file must be the output_directory
-    path.
-    '''
+    # work on the files
     samples = file.readlines()
-    output_directory = samples[0]
+    output_directory = samples[0][:-1] # [:-1] remove the '\n' from the end
     samples.pop(0)
 
     for s in samples:
         # reading a file
-        filename = s
-        y, sr = read_file(filename)
+        filepath = s[:-1] # [:-1] remove the '\n' from the end
+        y, samplerate = read_file(filepath)
 
         # reducing noise using db power
-        y_reduced_power = reduce_noise_power(y, sr)
+        y_reduced_power = reduce_noise_power(y, samplerate)
 
         # trimming silences
-        y_reduced_power, time_trimmed = trim_silence(y_reduced_power)
+        y_reduced_power, _ = trim_silence(y_reduced_power)
+        # y_reduced_power = np.array(y_reduced_power.tolist())
 
-        output_file(output_directory ,filename, y_reduced_power, sr, '_filtered')
-        print("Done for file " + s)
+        output_file(output_directory ,filepath, y_reduced_power, samplerate, '_filtered')
+        print("Done for file " + filepath)
