@@ -26,16 +26,6 @@ def read_file(filepath):
     channels, samplerate = soundfile.read(filepath, dtype='float32')
     return channels.transpose(), samplerate
 
-'''
-Determine the spectral centroid as a function of time
-'''
-def spectral_centroid(y, samplerate=44100):
-    magnitudes = np.abs(np.fft.rfft(x)) # magnitudes of positive frequencies
-    length = len(x)
-    freqs = np.abs(np.fft.fftfreq(length, 1.0/samplerate)[:length//2+1]) # positive frequencies
-    return np.sum(magnitudes*freqs) / np.sum(magnitudes) # return weighted mean
-
-
 '''------------------------------------
 NOISE REDUCTION USING POWER:
     receives an audio matrix,
@@ -44,8 +34,7 @@ NOISE REDUCTION USING POWER:
 def reduce_noise_power(channels, sr):
     y_clean = []
     for y in channels:
-        # cent = librosa.feature.spectral_centroid(y=y, sr=sr)
-        cent = spectral_centroid(y=y, samplerate=sr)
+        cent = librosa.feature.spectral_centroid(y=y, sr=sr)
 
         threshold_h = round(np.median(cent))*1.5
         threshold_l = round(np.median(cent))*0.1
@@ -67,7 +56,7 @@ def trim_silence(channels):
         trimmed_length = librosa.get_duration(y) - librosa.get_duration(y_trimmed)
         trimmed.append(y_trimmed)
 
-    return np.array(trimmed), trimmed_length
+    return trimmed, trimmed_length
 
 '''------------------------------------
 OUTPUT GENERATOR:
