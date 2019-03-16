@@ -1,6 +1,0 @@
-test_output/
-00_competition_samples/1.wav
-00_competition_samples/2.wav
-00_competition_samples/3.wav
-00_competition_samples/4.wav
-00_competition_samples/7.wav
